@@ -8,6 +8,7 @@ require 'src/StateMachine'
 require 'src/Util'
 
 require 'src/states/BaseState'
+require 'src/states/StartState'
 
 gTextures = {
     -- backgrounds
