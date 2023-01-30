@@ -31,6 +31,12 @@ function love.load()
         resizable = true
     })
 
+    gStateMachine = StateMachine {
+        ['start'] = function() return StartState() end,
+        ['play'] = function() return PlayState() end
+    }
+    gStateMachine:change('start')
+
     gSounds['music']:setLooping(true)
     gSounds['music']:play()
 
@@ -75,7 +81,7 @@ end
 
 function love.update(dt)
     if not paused then
-        
+        gStateMachine:update(dt)
 
         love.keyboard.keysPressed = {}
         love.mouse.keysPressed = {}
@@ -85,6 +91,6 @@ end
 
 function love.draw()
     push:start()
-
+    gStateMachine:render()
     push:finish()
 end
