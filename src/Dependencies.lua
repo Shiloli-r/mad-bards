@@ -3,6 +3,7 @@ push = require 'lib/push'
 Timer = require 'lib/knife.timer'
 
 require 'src/Alien'
+require 'src/AlienLaunchMarker'
 require 'src/Background'
 require 'src/constants'
 require 'src/Obstacle'
