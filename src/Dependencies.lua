@@ -5,6 +5,7 @@ Timer = require 'lib/knife.timer'
 require 'src/Alien'
 require 'src/Background'
 require 'src/constants'
+require 'src/Obstacle'
 require 'src/StateMachine'
 require 'src/Util'
 
