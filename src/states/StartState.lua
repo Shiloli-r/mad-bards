@@ -50,7 +50,7 @@ function StartState:render()
     
     love.graphics.setColor(200/255, 200/255, 200/255, 1)
     love.graphics.setFont(gFonts['huge'])
-    love.graphics.printf('Angry 50', 0, VIRTUAL_HEIGHT / 2 - 40, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('Mad Bards', 0, VIRTUAL_HEIGHT / 2 - 40, VIRTUAL_WIDTH, 'center')
     
     love.graphics.setColor(200/255, 200/255, 200/255, 1)
     love.graphics.setFont(gFonts['medium'])
